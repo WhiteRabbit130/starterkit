@@ -23,3 +23,12 @@
   flex-grow: 1;
 }
 
+.auth-layout {
+  background-color: lightcoral;;
+  padding-top: 64px;
+}
+
+.non-auth-layout {
+  background-color: lightblue;
+  padding-top: 64px;
+}
