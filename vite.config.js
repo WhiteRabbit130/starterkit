@@ -23,6 +23,7 @@ export default defineConfig({
             "@components": "/src/components",
             "@pages": "/src/pages",
             "@styles": "/src/styles",
+            "@store": "/src/store",
             "@test": "/src/test",
         }
     }
