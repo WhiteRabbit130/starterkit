@@ -9,10 +9,10 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <Link to="/">Home</Link>
-        <Link to="/counter">Counter</Link>
+        <Link to="/" >Home</Link>
+        <Link to="/counter" >Counter</Link>
       </header>
-      
+
       <div className="content">
         <Routes>
           <Route path='/' exact element={<Home />} />
