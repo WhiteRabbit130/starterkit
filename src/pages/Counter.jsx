@@ -1,6 +1,8 @@
 function Counter () {
     return (
-        <></>
+        <div>
+            This is Counter Page
+        </div>
     )
 }
 
