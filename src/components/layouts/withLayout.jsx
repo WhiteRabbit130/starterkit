@@ -1,9 +1,9 @@
 import AuthLayout from "./AuthLayout";
 import NonAuthLayout from "./NonAuthLayout";
 
-function withAuthLayout(elements, isLoggedIn) {
+function withAuthLayout(elements) {
     return (
-        <AuthLayout isSignedIn={isLoggedIn}>
+        <AuthLayout>
             {elements}
         </AuthLayout>
     )

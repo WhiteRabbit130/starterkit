@@ -1,13 +1,18 @@
+import { useRecoilState } from "recoil";
 import { Navigate } from "react-router-dom";
 
+import { userState } from "@store";
+
 function AuthLayout(props) {
-    if(!props.isSignedIn) {
+    const [user] = useRecoilState(userState);
+
+    if(!user.isLoggedIn) {
       return (<Navigate to="/" />)
     }
 
     return (
         <div className="auth-layout">
-            {!props.isSignedIn
+            {!user.isLoggedIn
                 ? <p>You are not logged in yet. You have to log first to see these pages.</p>
                 : <>{props.children}</>}            
         </div>
