@@ -1,5 +1,6 @@
-import { getProducts } from "@api";
 import { useEffect } from "react";
+
+import { getProducts } from "@api";
 
 function Home () {
     useEffect(() => {
@@ -7,7 +8,7 @@ function Home () {
     }, []);
 
     return (
-        <div style={{height: "100%"}}>
+        <div>
             This is Home Page
         </div>
     )
